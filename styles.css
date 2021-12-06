@@ -3,25 +3,19 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 100%;
+    background: #F3DE82;
+}
+
+h1, h3 {
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  color: #C0432D;
+  letter-spacing: 0.1rem;
+  margin: 0;
 }
 
 h1 {
-    font-family: 'Jost', sans-serif;
-    text-transform: uppercase;
-    color: #C0432D;
     font-size: 2rem;
-    letter-spacing: 0.1rem;
-    margin: 0;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 10px rgb(247, 0, 0), 0 0 20px #bb2b11, 0 0 40px #c93a21, 0 0 50px #c53217, 0 0 60px #c70e0e, 0 0 70px #C0432D;
-  }
-  
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #c72407, 0 0 30px #e62c0b, 0 0 50px #e63c1e, 0 0 60px #d43519, 0 0 70px #ce4027, 0 0 80px #af3520;
-  }
 }
 
 h2 {
@@ -34,54 +28,23 @@ h2 {
 }
 
 h3 {
-    font-family: 'Jost', sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: #C0432D;
-    
-    margin: 0;
 }
 
-h4 {
-    font-family: 'Jost', sans-serif;
-    text-transform: uppercase;
-    color: #576768;
-    font-size: 1.6rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
+p, .p-landing {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  text-transform: inherit;
+  float: center;
+  padding-bottom: 1rem;
 }
 
 p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.8rem;
-    text-transform: inherit;
     color: #383838;
-    float: center;
-    padding-bottom: 1rem;
 }
 
 .p-landing {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  text-transform: inherit;
   color: #C0432D;
-  float: center;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-}
-
-.p-about {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  text-transform: inherit;
-  color: #383838;
-  float: center;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
 }
 
 a {
@@ -106,13 +69,6 @@ ul {
 
 li:hover {
     font-style: italic;
-    color:#ff7839;
-}
-
-@media (max-width: 550px) {
-    li {
-        display: inline-block;
-    }
 }
 
 .navbar {
@@ -130,6 +86,10 @@ li:hover {
     z-index: 1;
 }
 
+.hamburger {
+  display: none;
+}
+
 .hero {
   background: #F3DE82;
   background-size: cover;
@@ -139,8 +99,6 @@ li:hover {
   background-repeat: no-repeat;
 }
 
-
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -149,41 +107,29 @@ li:hover {
   transform: translate(-50%, -50%);
 }
 
+.projects, .projects-unit, .projects-image, .projects-info {
+  display: flex;
+  background: #F3DE82;
+  margin: 0;
+}
+
 .projects {
-    display: flex;
     width: 100%;
     flex-direction: row;
-    background: #F3DE82;
   }
 
   .projects-unit {
     width: 100%;
-    margin:0;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media (max-width: 550px) {
-    .projects-unit {
-        flex-direction: column;
-        padding-top: 1 rem;
-      }
-
-    .projects-info {
-        padding: 0;
-        margin: 0;
-      }
-}
-
   .projects-image {
-    display: flex;
     flex: 1;
-    margin:0;
     width: 90%;
     padding-top: 60%;
-    background: #F3DE82;
     transition: ease-in-out 200ms;
+    background-size: cover;
   }
 
   .projects-image:hover {
@@ -191,11 +137,7 @@ li:hover {
   }
 
   .projects-info {
-    display: flex;
-    flex: 1;
     flex-direction: column;
-    background: #F3DE82;
-    width: 70%;
     align-items: center;
     gap: 1rem;
     padding-top: .5rem;
@@ -204,10 +146,16 @@ li:hover {
 
   .top-image {
     background-size: cover;
-    width: 70%;
-    padding-top: 45%;
+    width: 80%;
+    padding-top: 50%;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .long-image {
+    width: 100%;
+    padding-top: 160%;
+    margin: auto;
   }
 
   .image1 {
@@ -233,7 +181,33 @@ li:hover {
 .image22 {
   background: url(img/infographic/animation.gif);
   background-size: cover;
-  padding-top: 70%;
+  width: 50%;
+  padding-top: 50%;
+}
+
+.image31 {
+  background: url(img/Shuu/shuu_mockup.jpeg);
+      background-size: cover;
+}
+
+.image32 {
+  background: url(img/Shuu/shuu_products.png);
+      background-size: cover;
+}
+
+.image41 {
+  background: url(img/Smoove/smoove_macbook.jpeg);
+  background-size: cover;
+}
+
+.image42 {
+  background: url(img/Smoove/smoove_ipad.jpeg);
+  background-size: cover;
+}
+
+.about-image {
+  background: url(img/aboutme.png);
+  background-size: cover;
 }
 
   .button-readmore {
@@ -245,6 +219,7 @@ li:hover {
     text-transform: uppercase;
     color: #F3DE82;
     background: #C0432D;
+    border: 1px solid #C0432D;
     padding: .3rem .6rem .3rem .6rem;
     transition: ease-in-out 200ms;
 }
@@ -265,6 +240,7 @@ li:hover {
   text-transform: uppercase;
   color: #000000;
   background: #ffffff;
+  border: 1px solid #ffffff;
   padding: .3rem .6rem .3rem .6rem;
   transition: ease-in-out 200ms;
 }
@@ -281,8 +257,6 @@ li:hover {
   background: #F3DE82;
   width: 100%;
   height: auto;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
   justify-content: center;
 }
 
@@ -290,31 +264,78 @@ li:hover {
   margin: auto;
   background: #F3DE82;
   max-width: 60%;
-}
+} 
 
 .aboutproject {
+  display: flex;
+  flex-direction: column;
   margin-top: 5rem;
-  background: #f2f2f2;
+  background: #F3DE82;
   width: 100%;
   height: auto;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
   justify-content: center;
 }
 
-.aboutproject-text {
-  margin: auto;
-  background: #f2f2f2;
-  max-width: 60%;
-}
-  
-  
-  
 .dark {
   background-color:#000000;
   color: #ffffff;
 }
 
-.light {
-  filter: drop-shadow(1px 1px 1px #a5a5a5)
+@media (max-width: 550px) {
+  ul {
+    display: none;
+  }  
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    height: 3rem;
+  }
+
+  .hamburger {
+    display: inline-block;
+    width: 30px;
+    margin-top: 0.3rem;
+  }
+
+  .exit {
+    display: inline-block;
+    width: 25px;
+    margin-top: 0.3rem;
+  }
+
+  .projects-unit {
+      flex-direction: column;
+    }
+
+    .projects {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      background: #F3DE82;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .about {
+      margin-top: 3rem;
+    }
+
+    .about-text {
+      max-width: 80%;
+    }
+
+    .top-image {
+      width: 100%;
+      padding-top: 65%;
+    }
+    .year-team-role {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 }
