@@ -3,8 +3,9 @@ body {
     background-color: white;
     background-image: url(img/bgcircle2.svg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     background-size: 180vh;
+    padding-bottom: 2rem;
 }
 
 .navbar {
@@ -59,7 +60,7 @@ h3 {
     font-size: 4rem;
     text-transform: lowercase;
     color: black;
-    line-height: 1rem;
+    line-height: 3rem;
 }
 
 h4 {
@@ -79,10 +80,21 @@ h5 {
     color: #C7502A;
 }
 
+h6 {
+    font-family: 'Rozha One', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: lowercase;
+    color: black;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
 p {
     font-family: 'Jost', sans-serif;
     font-weight: 100;
     font-size: 0.8em;
+    max-width: 50em;
 }
 
 a {
@@ -111,13 +123,15 @@ li {
 }
 
 .about-container {
+    width: 60vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 0rem 10rem 0rem 10rem;
-    margin-top: 7rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .about-text {
@@ -133,8 +147,8 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
     margin-bottom: 2rem;
+    margin-top: 5rem;
     gap: 1rem;
 }
 
@@ -142,7 +156,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
+    margin: 0;
 }
 
 .project-card {
@@ -180,7 +195,15 @@ flex-direction: column;
     background: url(img/befriend/kvadratbefriend.png);
 }
 
-.img1, .img2, .img3, .img4 {
+.img5 {
+    background: url(img/kollektiva/kollektivakvadrat.png);
+}
+
+.img6 {
+    background: url(img/method/methodkvadrat.png);
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
     background-size: cover;
 }
 
@@ -190,14 +213,19 @@ flex-direction: column;
     margin-bottom: 2rem;
 }
 
+.about-me-img {
+    border-radius: 10px;
+    width: 20vw;
+}
+
 .project-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 60vw;
-    margin-top: 5rem;
     margin-bottom: 2rem;
+    margin-top: 5rem;
     margin-left: 20%;
 }
 
@@ -225,6 +253,7 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .button {
@@ -250,6 +279,10 @@ flex-direction: column;
 
 @media (max-width: 850px) {
 
+    h3 {
+        font-size: 3rem;
+    }
+
     .navbar {
         background-color: white;
         opacity: .9;
@@ -262,6 +295,17 @@ flex-direction: column;
 
     .quick-info {
         width: 80vw;
+    }
+
+    .about-me-img {
+        border-radius: 10px;
+        width: 60vw;
+        margin-bottom: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        padding-top: 5rem;
     }
 }
 
@@ -318,5 +362,16 @@ flex-direction: column;
         flex-direction: column;
         align-items: center;
         margin-top: 2rem;
+    }
+
+    .about-me-img {
+        border-radius: 10px;
+        width: 60vw;
+        margin-bottom: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        padding-top: 5rem;
     }
 }
